@@ -14,6 +14,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class UserCred {
     @Id
+    @Column(name = "user_id")
     private String userId;
     @Column(nullable = false, unique = true)
     private String username;
